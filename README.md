@@ -1,9 +1,9 @@
 RMDIR POC
 =========
 
-$ cd Preload/
-$ make
-$ ./preload.sh
+* $ cd Preload/
+* $ make
+* $ ./preload.sh
 
 ENJOY :)
 
