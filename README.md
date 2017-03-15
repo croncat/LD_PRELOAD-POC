@@ -1,5 +1,3 @@
-# LD_PRELOAD-POC
-
 RMDIR POC
 =========
 
@@ -23,19 +21,19 @@ Por qué digo que fue en este momento? Porque para realizar una reutilización d
 ¿Qué son los shared objects?
 No son ni más ni menos que bibliotecas dinámicas: son ficheros que contienen código objeto construido de forma independiente a su ubicación de tal modo que están preparadas para poder ser requeridas y cargadas en tiempo de ejecución por cualquier programa, en lugar de tener que ser enlazadas, previamente, en tiempo de compilación. Por tanto, han de estar disponibles como ficheros independientes al programa ejecutable (generalmente en directorios del sistema).
 
-En el caso de ELF, se expresan:
-EXEC: ejecutable
-REL: reubicable (libreria estática)
-DYN: objeto compartido (libreria dinámica)
+### En el caso de ELF, se expresan
+* EXEC: ejecutable
+* REL: reubicable (libreria estática)
+* DYN: objeto compartido (libreria dinámica)
 
-Comandos a utilizar:
-readelf -h NAME (cabecera)
-readelf -s NAME (simbolos)
-objdump -p NAME (dependencias dinámicas)
-ldd NAME (dependencias dinámicas)
-nm -D -C NAME (only dynamic symbols and correct names in C++)
+### Comandos
+* readelf -h NAME (cabecera)
+* readelf -s NAME (simbolos)
+* objdump -p NAME (dependencias dinámicas)
+* ldd NAME (dependencias dinámicas)
+* nm -D -C NAME (only dynamic symbols and correct names in C++)
 
-Manual:
-man ld.so
-man dlsym
-man gcc (for PIC and shared)
+### Manual
+* man ld.so
+* man dlsym
+* man gcc (for PIC and shared)
