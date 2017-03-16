@@ -7,8 +7,8 @@ RMDIR POC
 
 ENJOY :)
 
-GENERAL INFO (in english soon)
-==============================
+GENERAL INFO
+============
 
 Toda pieza de software es factible de ser reutilizada. En cualquier sistema operativo moderno, podemos encontrar mecanismos para poder desarrollar diversos programas que interactuen con piezas de software en común. Los sistemas operativos tipo UNIX no son la excepción.
 
